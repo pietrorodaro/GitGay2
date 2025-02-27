@@ -7,6 +7,75 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TabControl>
+            <!-- Tab per i dati del Cliente -->
+            <TabItem Header="Cliente">
+                <StackPanel>
+                    <TextBlock Text="Codice Fiscale:" />
+                    <TextBox Name="CodiceFiscaleTextBox" />
 
+                    <TextBlock Text="Cognome:" />
+                    <TextBox Name="CognomeTextBox" />
+
+                    <TextBlock Text="Nome:" />
+                    <TextBox Name="NomeTextBox" />
+
+                    <TextBlock Text="CittÃ :" />
+                    <TextBox Name="CittaTextBox" />
+
+                    <TextBlock Text="Provincia:" />
+                    <TextBox Name="ProvinciaTextBox" />
+
+                    <TextBlock Text="Email:" />
+                    <TextBox Name="EmailTextBox" />
+
+                    <TextBlock Text="Telefono:" />
+                    <TextBox Name="TelefonoTextBox" />
+
+                    <TextBlock Text="Cellulare:" />
+                    <TextBox Name="CellulareTextBox" />
+
+                    <Button Content="Aggiungi Cliente" Click="AggiungiClienteButton_Click"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Tab per i dati della Camera -->
+            <TabItem Header="Camera">
+                <StackPanel>
+                    <TextBlock Text="Numero Camera:" />
+                    <TextBox Name="NumeroCameraTextBox" />
+
+                    <TextBlock Text="Descrizione Camera:" />
+                    <TextBox Name="DescrizioneCameraTextBox" />
+
+                    <TextBlock Text="Tipologia Camera:" />
+                    <TextBox Name="TipologiaTextBox" />
+
+                    <Button Content="Aggiungi Camera" Click="AggiungiCameraButton_Click"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Tab per i dati della Prenotazione -->
+            <TabItem Header="Prenotazione">
+                <StackPanel>
+                    <TextBlock Text="Data Prenotazione:" />
+                    <DatePicker Name="DataPrenotazioneDatePicker" />
+
+                    <TextBlock Text="Data Inizio:" />
+                    <DatePicker Name="DataInizioDatePicker" />
+
+                    <TextBlock Text="Data Fine:" />
+                    <DatePicker Name="DataFineDatePicker" />
+
+                    <TextBlock Text="Cliente:" />
+                    <TextBox Name="ClienteTextBox" />
+
+                    <TextBlock Text="Camera:" />
+                    <TextBox Name="CameraTextBox" />
+
+                    <Button Content="Crea Prenotazione" Click="CreaPrenotazioneButton_Click"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
