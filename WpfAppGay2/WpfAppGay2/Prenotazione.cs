@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfAppGay2
 {
+    //Modifiche da github GAYTYYYYYYYASFCYTUGYUFBIUJFGVBEAUOLB
     public class Prenotazione
     {
         private DateOnly dataPrenotazione;
